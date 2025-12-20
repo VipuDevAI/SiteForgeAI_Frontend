@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* LIGHT MODE - Sky Blue Theme */
+:root {
+  --button-outline: rgba(0,0,0, .10);
+  --badge-outline: rgba(0,0,0, .05);
+  --opaque-button-border-intensity: -8;
+  --elevate-1: rgba(0,0,0, .03);
+  --elevate-2: rgba(0,0,0, .08);
+  --background: 210 100% 98%;
+  --foreground: 210 10% 12%;
+  --border: 210 20% 88%;
+  --card: 210 50% 97%;
+  --card-foreground: 210 10% 12%;
+  --card-border: 210 30% 92%;
+  --sidebar: 210 40% 94%;
+  --sidebar-foreground: 210 10% 12%;
+  --sidebar-border: 210 25% 88%;
+  --sidebar-primary: 210 100% 50%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 210 30% 88%;
+  --sidebar-accent-foreground: 210 10% 12%;
+  --sidebar-ring: 210 100% 50%;
+  --popover: 210 50% 95%;
+  --popover-foreground: 210 10% 12%;
+  --popover-border: 210 25% 88%;
+  --primary: 210 100% 50%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 25% 88%;
+  --secondary-foreground: 210 10% 12%;
+  --muted: 210 20% 92%;
+  --muted-foreground: 210 10% 45%;
+  --accent: 210 30% 90%;
+  --accent-foreground: 210 10% 12%;
+  --destructive: 0 84% 40%;
+  --destructive-foreground: 0 84% 98%;
+  --input: 210 20% 75%;
+  --ring: 210 100% 50%;
+  --chart-1: 210 100% 50%;
+  --chart-2: 200 80% 45%;
+  --chart-3: 190 70% 40%;
+  --chart-4: 180 60% 45%;
+  --chart-5: 220 80% 55%;
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: JetBrains Mono, Menlo, monospace;
+  --radius: .5rem;
+  --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 1px 2px -1px hsl(0 0% 0% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 1px 2px -1px hsl(0 0% 0% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 2px 4px -1px hsl(0 0% 0% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 4px 6px -1px hsl(0 0% 0% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(0 0% 0% / 0.00), 0px 8px 10px -1px hsl(0 0% 0% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
+  --tracking-normal: 0em;
+  --spacing: 0.25rem;
+
+  --sidebar-primary-border: hsl(var(--sidebar-primary));
+  --sidebar-accent-border: hsl(var(--sidebar-accent));
+  --primary-border: hsl(var(--primary));
+  --secondary-border: hsl(var(--secondary));
+  --muted-border: hsl(var(--muted));
+  --accent-border: hsl(var(--accent));
+  --destructive-border: hsl(var(--destructive));
+}
+
+.dark {
+  --button-outline: rgba(255,255,255, .10);
+  --badge-outline: rgba(255,255,255, .05);
+  --opaque-button-border-intensity: 9;
+  --elevate-1: rgba(255,255,255, .04);
+  --elevate-2: rgba(255,255,255, .09);
+  --background: 210 20% 8%;
+  --foreground: 210 20% 96%;
+  --border: 210 15% 20%;
+  --card: 210 20% 11%;
+  --card-foreground: 210 20% 96%;
+  --card-border: 210 15% 16%;
+  --sidebar: 210 20% 12%;
+  --sidebar-foreground: 210 20% 96%;
+  --sidebar-border: 210 15% 18%;
+  --sidebar-primary: 210 100% 55%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 210 20% 20%;
+  --sidebar-accent-foreground: 210 20% 96%;
+  --sidebar-ring: 210 100% 55%;
+  --popover: 210 20% 14%;
+  --popover-foreground: 210 20% 96%;
+  --popover-border: 210 15% 20%;
+  --primary: 210 100% 55%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 210 15% 20%;
+  --secondary-foreground: 210 20% 96%;
+  --muted: 210 15% 18%;
+  --muted-foreground: 210 15% 60%;
+  --accent: 210 20% 18%;
+  --accent-foreground: 210 20% 96%;
+  --destructive: 0 84% 50%;
+  --destructive-foreground: 0 84% 98%;
+  --input: 210 15% 30%;
+  --ring: 210 100% 55%;
+  --chart-1: 210 100% 60%;
+  --chart-2: 200 80% 50%;
+  --chart-3: 190 70% 45%;
+  --chart-4: 180 60% 50%;
+  --chart-5: 220 80% 60%;
+
+  --sidebar-primary-border: hsl(var(--sidebar-primary));
+  --sidebar-accent-border: hsl(var(--sidebar-accent));
+  --primary-border: hsl(var(--primary));
+  --secondary-border: hsl(var(--secondary));
+  --muted-border: hsl(var(--muted));
+  --accent-border: hsl(var(--accent));
+  --destructive-border: hsl(var(--destructive));
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .hover-elevate {
+    @apply transition-all duration-150;
+  }
+  .hover-elevate:hover {
+    background-color: var(--elevate-1);
+  }
+  .active-elevate-2:active {
+    background-color: var(--elevate-2);
+  }
+}
